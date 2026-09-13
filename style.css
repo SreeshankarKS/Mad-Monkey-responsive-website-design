@@ -2457,3 +2457,16 @@ body {
         padding-right: 10px !important;
     }
 }
+/* UNIFORM CATEGORY BUTTONS */
+.hero-buttons a, 
+.hero-buttons button, 
+.category-btn {
+    width: 120px !important;       /* Forces every button to the exact same width */
+    height: 40px !important;      /* Forces uniform height */
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    padding: 0 !important;        /* Prevents text length from stretching buttons */
+    box-sizing: border-box !important;
+}
