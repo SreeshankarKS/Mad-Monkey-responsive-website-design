@@ -2457,27 +2457,24 @@ body {
         padding-right: 10px !important;
     }
 }
-/* FORCED EQUAL 2X2 BUTTON GRID */
-.hero-buttons,
-.category-buttons {
-    display: grid !important;
-    grid-template-columns: repeat(2, 1fr) !important; /* 2 equal-width columns */
-    gap: 12px !important;                              /* Even spacing between buttons */
-    max-width: 280px !important;                       /* Controls overall grid width */
-    margin: 0 auto !important;                         /* Centers the grid */
-}
-
-.hero-buttons a,
-.hero-buttons button,
-.category-buttons a,
-.category-buttons button {
-    width: 100% !important;                            /* Fills grid column completely */
-    height: 42px !important;                           /* Equal height for all buttons */
-    display: flex !important;
+/* FORCE ALL OVERLAY BUTTONS TO BE EXACT SAME SIZE */
+div[style*="position"] a,
+div[class*="hero"] a,
+div[class*="glass"] a,
+.hero a,
+.banner a {
+    width: 120px !important;
+    min-width: 120px !important;
+    max-width: 120px !important;
+    height: 38px !important;
+    min-height: 38px !important;
+    max-height: 38px !important;
+    display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
-    padding: 0 5px !important;
     box-sizing: border-box !important;
+    padding: 0 !important;
+    margin: 4px !important;
     text-align: center !important;
+    font-size: 11px !important;
 }
-
