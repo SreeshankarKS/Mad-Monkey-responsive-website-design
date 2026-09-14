@@ -1331,6 +1331,7 @@ a {
     box-sizing: border-box;
 }
 
+/* Equals out button sizes and centers them in a 2x2 grid */
 /* Container layout: 2x2 grid for mobile */
 .jewelry-buttons {
     display: grid !important;
@@ -2134,20 +2135,14 @@ a {
 .about-section {
     position: relative;
     z-index: 2;
-    margin-bottom: 60px !important;
+    margin-bottom: 120px !important;
     padding-bottom: 0 !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    box-sizing: border-box !important;
 }
 
 .services-section {
     position: relative;
     z-index: 1;
-    margin-top: 0 !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    box-sizing: border-box !important;
+    margin-top: 120px !important;
     clear: both;
 }
 
@@ -2458,26 +2453,3 @@ body {
         padding-right: 10px !important;
     }
 }
-/* =========================================
-   GLOBAL OVERFLOW & CENTERING FIX
-========================================= */
-
-html, body {
-    width: 100% !important;
-    max-width: 100% !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    overflow-x: hidden !important;
-}
-
-* {
-    box-sizing: border-box !important;
-}
-
-/* Ensure outer grid wrappers don't exceed screen boundary */
-section, main, footer, header {
-    max-width: 100% !important;
-    overflow-x: hidden;
-}
-
-
