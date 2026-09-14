@@ -2458,5 +2458,26 @@ body {
         padding-right: 10px !important;
     }
 }
+/* =========================================
+   GLOBAL OVERFLOW & CENTERING FIX
+========================================= */
+
+html, body {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow-x: hidden !important;
+}
+
+* {
+    box-sizing: border-box !important;
+}
+
+/* Ensure outer grid wrappers don't exceed screen boundary */
+section, main, footer, header {
+    max-width: 100% !important;
+    overflow-x: hidden;
+}
 
 
