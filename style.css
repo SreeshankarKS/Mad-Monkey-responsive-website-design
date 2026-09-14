@@ -2134,14 +2134,20 @@ a {
 .about-section {
     position: relative;
     z-index: 2;
-    margin-bottom: 120px !important;
+    margin-bottom: 60px !important;
     padding-bottom: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
 }
 
 .services-section {
     position: relative;
     z-index: 1;
-    margin-top: 120px !important;
+    margin-top: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
     clear: both;
 }
 
