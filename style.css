@@ -2084,41 +2084,117 @@ a {
     color: #555;
 }
 
-
-/* =========================================
-   MOBILE
-========================================= */
-
 @media (max-width: 768px) {
 
+    /* =========================
+       ABOUT US - MOBILE
+    ========================= */
+
     .about-section {
-        grid-template-columns: 1fr;
-        margin: 50px 15px;
+        width: calc(100% - 30px);
+        margin: 50px 15px !important;
+        padding: 55px 20px !important;
+
+        box-sizing: border-box;
+
+        display: block;
     }
 
-    .about-image {
-        height: 400px;
-    }
+    .about-container {
+        width: 100%;
+        max-width: 100%;
 
-    .about-content {
-        padding: 50px 30px;
-    }
+        margin: 0 auto;
 
-    .services-section {
-        margin: 50px 15px;
-        padding: 45px 25px;
+        display: flex;
+        flex-direction: column;
 
-        grid-template-columns: 1fr;
         gap: 35px;
     }
 
+    .about-image {
+        width: 100%;
+        max-width: 100%;
+
+        height: auto !important;
+        max-height: none !important;
+
+        margin: 0 auto;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        overflow: hidden;
+    }
+
+    .about-image img {
+        width: 100%;
+        max-width: 100%;
+
+        height: auto !important;
+
+        display: block;
+        margin: 0 auto;
+
+        object-fit: contain;
+    }
+
+    .about-content {
+        width: 100%;
+        max-width: 100%;
+
+        padding: 0 !important;
+    }
+
+
+    /* =========================
+       WHY MAD MONKEY - MOBILE
+    ========================= */
+
+    .services-section {
+        width: calc(100% - 30px);
+        max-width: calc(100% - 30px);
+
+        margin: 50px 15px !important;
+
+        padding: 45px 25px !important;
+
+        box-sizing: border-box;
+
+        display: block;
+    }
+
+    .services-heading {
+        width: 100%;
+        max-width: 100%;
+    }
+
     .services-grid {
+        width: 100%;
+        max-width: 100%;
+
+        display: grid;
         grid-template-columns: 1fr;
+
+        box-sizing: border-box;
+    }
+
+    .service-item {
+        width: 100%;
+        max-width: 100%;
+
+        box-sizing: border-box;
     }
 
     .service-item:nth-child(odd) {
         border-right: none;
     }
+
+
+    /* =========================
+       TESTIMONIALS
+    ========================= */
 
     .testimonials-grid {
         grid-template-columns: 1fr;
@@ -2452,68 +2528,4 @@ body {
         padding-left: 10px !important; /* Prevents first link from hugging the left border */
         padding-right: 10px !important;
     }
-}
-/* =========================================
-   MOBILE CENTERING FIX
-========================================= */
-
-@media (max-width: 768px) {
-
-    /* ABOUT SECTION */
-    .about-section {
-        width: 100%;
-        margin: 50px 0 !important;
-        padding: 55px 6% !important;
-        box-sizing: border-box;
-    }
-
-    .about-container {
-        width: 100%;
-        max-width: 100%;
-        margin: 0 auto;
-        grid-template-columns: 1fr;
-    }
-
-    .about-image {
-        width: 100%;
-        max-width: 100%;
-        height: auto !important;
-        max-height: none !important;
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .about-image img {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-        display: block;
-        object-fit: contain;
-        margin: 0 auto;
-    }
-
-
-    /* SERVICES / WHY MAD MONKEY */
-    .services-section {
-        width: 100%;
-        max-width: 100%;
-        margin: 50px 0 !important;
-        padding: 45px 6% !important;
-        box-sizing: border-box;
-        grid-template-columns: 1fr;
-    }
-
-    .services-grid {
-        width: 100%;
-        max-width: 100%;
-        grid-template-columns: 1fr;
-    }
-
-    .service-item {
-        width: 100%;
-        box-sizing: border-box;
-    }
-
 }
