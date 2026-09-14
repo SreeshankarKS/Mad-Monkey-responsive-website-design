@@ -2453,3 +2453,67 @@ body {
         padding-right: 10px !important;
     }
 }
+/* =========================================
+   MOBILE CENTERING FIX
+========================================= */
+
+@media (max-width: 768px) {
+
+    /* ABOUT SECTION */
+    .about-section {
+        width: 100%;
+        margin: 50px 0 !important;
+        padding: 55px 6% !important;
+        box-sizing: border-box;
+    }
+
+    .about-container {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        grid-template-columns: 1fr;
+    }
+
+    .about-image {
+        width: 100%;
+        max-width: 100%;
+        height: auto !important;
+        max-height: none !important;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-image img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        display: block;
+        object-fit: contain;
+        margin: 0 auto;
+    }
+
+
+    /* SERVICES / WHY MAD MONKEY */
+    .services-section {
+        width: 100%;
+        max-width: 100%;
+        margin: 50px 0 !important;
+        padding: 45px 6% !important;
+        box-sizing: border-box;
+        grid-template-columns: 1fr;
+    }
+
+    .services-grid {
+        width: 100%;
+        max-width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .service-item {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+}
