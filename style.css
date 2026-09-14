@@ -1331,28 +1331,30 @@ a {
     box-sizing: border-box;
 }
 
-/* Equals out button sizes and centers them in a 2x2 grid */
+/* Container layout: 2x2 grid for mobile */
 .jewelry-buttons {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
-    gap: 12px;
-    width: 90%;
-    max-width: 380px;
-    margin: 0 auto;
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 12px !important;
+    width: 90% !important;
+    max-width: 380px !important;
+    margin: 0 auto !important;
 }
 
+/* Force white text, sizing, background, and alignment on the jewelry buttons */
 .jewelry-buttons button {
-    color: #ffffff !important; /* Force pure white text */
-    border: 1px solid rgba(255, 255, 255, 0.6);
-    padding: 12px 0;
-    font-size: 0.75rem;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-    width: 100%;
-    text-align: center;
-    border-radius: 20px;
-    background: rgba(0, 0, 0, 0.4); /* Slight dark backing so white text pops */
-    backdrop-filter: blur(4px);
+    color: #ffffff !important; /* Forces pure white text */
+    border: 1px solid rgba(255, 255, 255, 0.7) !important;
+    background: rgba(0, 0, 0, 0.4) !important; /* Dark glass background so white text stands out */
+    backdrop-filter: blur(4px) !important;
+    padding: 12px 0 !important;
+    font-size: 0.75rem !important;
+    font-weight: 700 !important;
+    letter-spacing: 1.5px !important;
+    width: 100% !important;
+    text-align: center !important;
+    border-radius: 20px !important;
+    cursor: pointer !important;
 }
 .jewelry-buttons button:hover {
     background: white;
