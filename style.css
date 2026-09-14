@@ -2452,4 +2452,22 @@ body {
         padding-right: 10px !important;
     }
 }
+/* Add this at the bottom of style.css */
+
+/* Prevent page elements from overflowing off the screen */
+html, body {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+
+/* Fix background container alignment */
+.services-section {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    margin: 0 auto !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
 
